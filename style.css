@@ -272,3 +272,352 @@ strong {
     border-radius: 6px;
     display:ruby-base;
 }
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Main wrapper */
+.main-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero-section {
+    width: 100%;
+    padding: 20px 15px 30px;
+    box-sizing: border-box;
+}
+
+/* College logo */
+.logo-container {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: min(800px, 85vw);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tech Innova logo */
+.tlogo {
+    width: min(400px, 82vw);
+    max-width: 100%;
+    height: auto;
+}
+
+/* PRESENTS */
+.presents {
+    font-size: clamp(18px, 5vw, 30px);
+    margin: 8px 0 12px;
+    text-align: center;
+}
+
+/* Date */
+.date {
+    font-size: clamp(22px, 6vw, 32px);
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Year / Event date */
+.year {
+    font-size: clamp(20px, 5.5vw, 32px);
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+/* Register button */
+.glowing-button {
+    padding: 13px 18px;
+    font-size: 14px;
+    min-height: 48px;
+    width: auto;
+    max-width: 90%;
+    margin: 5px auto;
+}
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* =========================
+   ABOUT CARDS
+   ========================= */
+
+.event-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+/* About heading */
+.about {
+    font-size: 17px;
+    line-height: 1.35;
+    padding: 7px 9px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Paragraph */
+.event-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* =========================
+   EVENT SECTIONS
+   ========================= */
+
+.section-heading {
+    font-size: 25px;
+    margin: 35px 0 18px;
+}
+
+/* IMPORTANT:
+   Change 400px minimum to 1 column on mobile
+*/
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Event title */
+.event-title {
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 7px 9px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Event description */
+.event-description {
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+/* Event details */
+.event-details {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* =========================
+   CONTACT SECTION
+   ========================= */
+
+.contact-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px 15px;
+    border-radius: 18px;
+}
+
+.contact {
+    font-size: 21px;
+    padding: 7px 10px;
+}
+
+/* Google map */
+.contact-section iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    border-radius: 12px;
+}
+
+/* =========================
+   COORDINATORS
+   ========================= */
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.coord-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+/* Staff / Student coordinator title */
+.staff {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+/* Phone number */
+.number {
+    font-size: 14px;
+}
+
+/* =========================
+   SOCIAL LINKS
+   ========================= */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.link {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: 14px;
+    padding: 9px 10px;
+}
+
+/* =========================
+   SMALL MOBILE DEVICES
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .hero-section {
+        padding: 15px 12px 25px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .logo {
+        width: 82vw;
+    }
+
+    .tlogo {
+        width: 78vw;
+    }
+
+    .presents {
+        font-size: 18px;
+        justify-content: flex-start;
+        padding-left: 12px;
+    }
+
+    .date {
+        font-size: 24px;
+    }
+
+    .year {
+        font-size: 22px;
+    }
+
+    .glowing-button {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+
+    .event-card {
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+
+    .event-card p,
+    .event-description {
+        font-size: 13.5px;
+        line-height: 1.55;
+    }
+
+    .section-heading {
+        font-size: 23px;
+    }
+
+    .event-title {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 18px 12px;
+    }
+
+    .contact {
+        font-size: 19px;
+    }
+}
+
+/* =========================
+   VERY SMALL PHONES
+   ========================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .event-card {
+        padding: 13px;
+    }
+
+    .event-card p,
+    .event-description {
+        font-size: 13px;
+    }
+
+    .about {
+        font-size: 15px;
+    }
+
+    .event-title {
+        font-size: 15px;
+    }
+
+    .section-heading {
+        font-size: 21px;
+    }
+}
